@@ -6,9 +6,14 @@ import express, { urlencoded } from "express";
 import session from "express-session";
 import { session as _session } from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
+import "dotenv/config";
 
 const pool = new Pool({
-  // add your configuration
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  database: process.env.DB_DATABASE,
+  password: process.env.DB_PASSWORD,
+  port: process.env.DB_PORT,
 });
 
 const app = express();
