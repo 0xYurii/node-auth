@@ -1,0 +1,20 @@
+{
+  "name": "odin-auth",
+  "version": "1.0.0",
+  "description": "learing node js auth",
+  "license": "ISC",
+  "author": "Younes Hebaiche",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "pg": "^8.16.3"
+  }
+}
